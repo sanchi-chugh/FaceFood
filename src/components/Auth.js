@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Signin() {
+function Auth() {
     return(
         <div className="row">
           <div className="col">
@@ -19,11 +19,11 @@ function Signin() {
     <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
   </div>
   <button type="submit" className="btn btn-danger">LOGIN</button>
-  <p><a href="">Forgot Password?</a></p>
+  <p><a href="#">Forgot Password?</a></p>
 </form>
         </div>
       </div>
     );
 }
 
-export default Signin;
+export default Auth;
