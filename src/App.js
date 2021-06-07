@@ -29,7 +29,7 @@ function App() {
       <DynamicLayoutRoute exact path="/add" component={Add_Items} layout="DASH_BOARD_NAV"/>
       <DynamicLayoutRoute exact path="/delete" component={Delete_Items} layout="DASH_BOARD_NAV"/>
       <DynamicLayoutRoute exact path="/contact" component={Contact} layout="DASH_BOARD_NAV"/>
-      <DynamicLayoutRoute exact path="/logout" component={Auth} />
+      <DynamicLayoutRoute exact path="/logout" component={Logout} />
       <Route component={Error} />
       </Switch>
       

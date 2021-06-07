@@ -4,19 +4,19 @@ import pizza from "../images/pizza.webp";
 
 const SData=[
     {
-        imgsrc: {pasta},
+        imgsrc: pasta,
          name: "Pasta",
           price: "200",
            alt: "pasta image",
     },
     {
-        imgsrc: {noodles},
+        imgsrc: noodles,
          name: "Noodles",
           price: "150",
            alt: "noodles image",
     },
     {
-        imgsrc: {pizza},
+        imgsrc: pizza,
          name: "Pizza",
           price: "300",
            alt: "pizza image",

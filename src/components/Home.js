@@ -1,4 +1,5 @@
-import React from "react";
+import React, {Component} from "react";
+import { Link,Redirect } from "react-router-dom";
 import Card from "./Cards";
 import Sdata from "./Sdata";
 import pasta from "../images/pasta.jpg";
@@ -6,7 +7,26 @@ import noodles from "../images/noodles.jpeg";
 import pizza from "../images/pizza.webp";
 
 
-function Home() {
+
+export default class Home extends Component {
+    constructor(props){
+      super(props)
+      const token = localStorage.getItem("token")
+
+      let loggedIn = true
+      if (token == null){
+        loggedIn = false
+      }
+
+      this.state = {
+        loggedIn
+      }
+
+    }
+    render(){
+      if(this.state.loggedIn === false){
+        return <Redirect to="/auth" />
+      }
     return(
         <>
         <nav class="navbar navbar-light bg-light">
@@ -37,9 +57,8 @@ function Home() {
 </div>
   
   
-  
 </>
-    );
+    )
+  }
 }
 
-export default Home;
